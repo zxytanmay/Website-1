@@ -1,0 +1,73 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Rangoli Restro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: #ff6666;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .gallery {
+            
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 16px;
+            padding: 38px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .gallery img:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .footer {
+            text-align: center;
+            background: #222;
+            color: white;
+            padding: 1rem 0;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                font-size: 20px;
+            }
+            .section {
+                padding: 40px;
+            }
+            button {
+                padding: 7px 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Photo Gallery</h1>
+        <p>Explore the vibrant moments from Rangoli Restro!</p>
+    </div>
+    <div class="gallery">
+        <a href="BP.jpg" ><img src="BP.jpg"></a>
+        <a href="roti.jpg" ><img src="roti.jpg"></a>
+        <a href="interior.jpg" ><img src="interior.jpg"></a>
+        <a href="BP.jpg" ><img src="BP.jpg"></a>
+        <a href="roti.jpg" ><img src="roti.jpg"></a>
+        <a href="interior.jpg" ><img src="interior.jpg"></a>
+        <a href="roti.jpg" ><img src="roti.jpg"></a>
+        <a href="interior.jpg" ><img src="interior.jpg"></a>
+    </div>
+    <div class="footer">
+        <button onclick="location.href='Rangolibites.html'" style="background-color: #ff6666; color: white; border: none; padding: 10px 20px; cursor: pointer; font-size: 16px;">Go to Home Page</button>
+        <p>&copy; 2025 Rangoli Bites. All rights reserved.</p>
+    </div>
+</body>
+</html>
